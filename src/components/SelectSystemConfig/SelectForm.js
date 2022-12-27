@@ -73,7 +73,7 @@ export class SelectForm extends React.Component {
         {
           validator: (rule, value, callback) => {
             if (
-              (/^\d+$/g.test(value) && value >= 1 && value <= 3584) ||
+              (/^\d+$/g.test(value) && value >= 1 && value <= 128000) ||
               value === ""
             ) {
               return callback();
